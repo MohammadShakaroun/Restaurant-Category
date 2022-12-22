@@ -24,7 +24,7 @@ const CategorySection = (props) => {
     }, [items]);
 
     return (
-        items.length != 0 && (
+        items.length !==0 && (
             <Grid item xs={12} md={12} sm={12} my={2}>
                 <Typography
                     fontFamily="Bartender SmCond Serif Pressed"

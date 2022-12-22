@@ -64,7 +64,7 @@ const Login = () => {
         e.preventDefault();
 
         axios
-            .post(`http://localhost:5001/user/auth/login`, {
+            .post(`http://localhost:3000/user/auth/login`, {
                 ...formValues,
             })
             .then((response) => {

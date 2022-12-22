@@ -9,10 +9,7 @@ const Footer = () => {
 
     return (
         <Grid item xs={12} md={12} sm={12} textAlign="center" sx={{ my: 5 }}>
-            <img
-                src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGff0anU9UJZxBzAwWIyPj1B...Q1vlSkqhvJ9sKNia1hV7FANhxwHe8c8jSxtAN5K0lM4oHrONIo="
-                style={{ height: "150px", width: "auto" }}
-            />
+            <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGff0anU9UJZxBzAwWIyPj1B...Q1vlSkqhvJ9sKNia1hV7FANhxwHe8c8jSxtAN5K0lM4oHrONIo=" style={{ height: "150px", width: "auto" }}  />
             <br />
             <Typography
                 fontFamily="lato"

@@ -88,7 +88,7 @@ const SignUp = () => {
 
         // Check if the user already exists before sending OTP
         axios
-            .get(`http://localhost:5001/user/auth/exists/${formValues.email}`)
+            .get(`http://localhost:3000/user/auth/exists/${formValues.email}`)
             .then((response) => {
                 return enqueueSnackbar("User already exists", {
                     variant: "warning",
@@ -104,7 +104,7 @@ const SignUp = () => {
                     });
                     setShowOtpForm(true);
                     axios
-                        .post(`http://localhost:5001/otp/send`, {
+                        .post(`http://localhost:3000/otp/send`, {
                             to: formValues.email,
                         })
                         .then((response) => {
@@ -137,7 +137,7 @@ const SignUp = () => {
     const handleOtpVerification = (e) => {
         e.preventDefault();
         axios
-            .post(`http://localhost:5001/otp/verify`, {
+            .post(`http://localhost:3000/otp/verify`, {
                 email: formValues.email,
                 otp: otp,
             })
@@ -155,7 +155,7 @@ const SignUp = () => {
         // e.preventDefault();
 
         axios
-            .post(`http://localhost:5001/user/auth/signup`, {
+            .post(`http://localhost:3000/user/auth/signup`, {
                 ...formValues,
             })
             .then((response) => {
